@@ -1,0 +1,58 @@
+
+body {
+    font-size: 100%;
+    margin-bottom: 0px;
+    padding: 50px;
+     background: #3eb550;
+}
+
+h1,
+h2,
+h3 {
+    color: #000000;
+    font-family: sans-serif;
+}
+h1 {
+    margin-left: auto;
+    color: #000000;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+li {
+    margin-left: 5%;
+    margin-bottom: 0px;
+    color: #000000;
+}
+
+
+p {
+    font-size: 150%;
+    margin-top: 0px;
+    margin-left: 3%;
+    color: #000000;
+    margin-right: 70%;
+
+
+}
+
+.second {
+    font-size: 200%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+
