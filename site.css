@@ -54,10 +54,48 @@ img {
     text-align: center;
 
 }
+#caption {font-size: 100%;
+margin-left: 35%;
+margin-right: 35%;}
 #page {
 
     max-width: 900px;
     margin: 0 auto 0 auto;
     background: rgb(130, 255, 121);
     padding: 30px;
+}
+.top-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    
+}
+#introduction {
+    margin-right: 7%;
+    background: #f3f7ff;
+    border-left: 6px solid #1d1184;
+
+}
+
+#introduction h2 {
+    font-style: italic;
+    margin-top: 0;
+}
+
+#introduction p {
+    font-size: 120%;
+    line-height: 1.5;
+}
+.profile {
+    text-align: center;
+    flex: 1;
+}
+
+.profile img {
+    width: 220px;
+    border-radius: 12px;
+}
+
+.profile p {
+    font-size: 90%;
 }
