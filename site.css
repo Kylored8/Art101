@@ -30,9 +30,9 @@ li {
 p {
     font-size: 150%;
     margin-top: 0px;
-    margin-left: 3%;
+    margin-left: 4%;
     color: #000000;
-    margin-right: 70%;
+    margin-right: 50%;
 
 
 }
@@ -45,7 +45,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 30%;
 }
 
 .centered {
@@ -54,5 +54,10 @@ img {
     text-align: center;
 
 }
+#page {
 
-
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background: rgb(130, 255, 121);
+    padding: 30px;
+}
