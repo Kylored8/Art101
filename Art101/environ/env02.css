@@ -2,9 +2,7 @@ body {
     background: green
 }
 
-.image {
-    display: flex;
-}
+
 
 .left {
     position:fixed;
@@ -40,4 +38,12 @@ margin-left:400px;
 margin-right:400px;
 
     color: #000000;
+}
+.mushroom {
+    position:fixed;
+left: 73%;
+    bottom: -45px;
+    width: 200px;
+    height: auto;
+    z-index: 999;
 }
