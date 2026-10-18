@@ -1,0 +1,43 @@
+body {
+    background: green
+}
+
+.image {
+    display: flex;
+}
+
+.left {
+    position:fixed;
+    right: 52%;
+    width: 100%;
+    top:0;
+}
+
+.right {
+    position:fixed;
+    left: 52%;
+    width: 100%;
+    top:0px;
+}
+
+.slug_image {
+    background-color: transparent;
+    position:relative;
+    margin-left: 50%;
+    margin-right: auto;
+    margin-top: 10%;
+}
+#slug-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    left: 50%;
+}
+p {display:fixed;
+    font-size: 40px;
+margin-left:400px;
+margin-right:400px;
+
+    color: #000000;
+}

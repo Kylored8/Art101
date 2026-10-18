@@ -99,3 +99,21 @@ margin-right: 35%;}
 .profile p {
     font-size: 90%;
 }
+.navigation {
+    background: #fff7e8;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.navigation h2 {
+    margin-top: 0;
+}
+
+.navigation li {
+    margin-bottom: 8px;
+}
+
+.navigation a {
+    color: #1d1184;
+    font-weight: bold;
+}
