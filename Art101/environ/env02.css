@@ -46,7 +46,7 @@ left: 73%;
 
 
 #slug-button {
-    position: fixed;
+    display: flex;
     left: 30%;
     width: 30%;
     top: 300px;
@@ -59,24 +59,6 @@ left: 73%;
 
     cursor: pointer;
 
-    /* Shape the clickable area around the slug */
-    clip-path: polygon(
-        40% 90%,
-        30% 75%,
-        30% 55%,
-        35% 35%,
-        55% 20%,
-        75% 10%,
-        90% 10%,
-        100% 5%,
-        95% 25%,
-        85% 40%,
-        70% 50%,
-        55% 60%,
-        45% 75%,
-    45% 100%,
-        15% 100%
-    );
 }
 
 .slug_image {
