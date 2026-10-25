@@ -6,32 +6,24 @@ body {
 
 .left {
     position:fixed;
-    right: 52%;
+    right: 54%;
     width: 100%;
     top:0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .right {
     position:fixed;
-    left: 52%;
+    left: 49%;
     width: 100%;
     top:0px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.slug_image {
-    background-color: transparent;
-    position:relative;
-    margin-left: 50%;
-    margin-right: auto;
-    margin-top: 10%;
-}
-#slug-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    left: 50%;
-}
+
+
 p {display:fixed;
     font-size: 40px;
 margin-left:400px;
@@ -45,5 +37,50 @@ left: 73%;
     bottom: -45px;
     width: 200px;
     height: auto;
-    z-index: 999;
+  
+}
+.text {
+    position: fixed;
+    margin-left:30%;
+    font-size: 40px;}
+
+
+#slug-button {
+    position: fixed;
+    left: 30%;
+    width: 30%;
+    top: 300px;
+
+    width: 800px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    /* Shape the clickable area around the slug */
+    clip-path: polygon(
+        40% 90%,
+        30% 75%,
+        30% 55%,
+        35% 35%,
+        55% 20%,
+        75% 10%,
+        90% 10%,
+        100% 5%,
+        95% 25%,
+        85% 40%,
+        70% 50%,
+        55% 60%,
+        45% 75%,
+    45% 100%,
+        15% 100%
+    );
+}
+
+.slug_image {
+    display: block;
+    width: 100%;
+    height: auto;
 }

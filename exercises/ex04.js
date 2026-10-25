@@ -1,5 +1,14 @@
 let count = 0;
-$("#needy-button").click( function() {
+let colorIndex = 0;
+let mood;
+let colors = ["Orchid", "Coral", "HotPink", "Plum"];
+$("#needy-button").click(function () {
+   if (count < 5) { mood = "fresh and happy"; }
+   else if ((count >= 5) && (count < 10)) { mood = "keep pushing"; }
+   else { mood = "so tired!"; }
+   $("#needy-button").html("Clicks: " + count + " Color: " + colors[colorIndex] + " - " + mood);
+   $("body").css("background-color", colors[colorIndex]);
    count = count + 1;
-   $("#needy-button").html("You clicked me " + count + " times");
+   colorIndex = colorIndex + 1;
+   if (colorIndex == 4) { colorIndex = 0; } 
 });

@@ -1,0 +1,9 @@
+body { 
+padding: 0px;
+margin: 0%;
+}
+button { 
+  display: flex;
+  justify-content: center;
+
+}
