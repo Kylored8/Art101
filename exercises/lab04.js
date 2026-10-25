@@ -1,16 +1,17 @@
 let count = 0;
-
+let arrayPosition = 0
 let buttonCreature = {
     name: "The slug of magic",
     species: "Magical mollusk",
     favoriteFood: "Interaction",
     moods: ["gratious", "appriciated", "glowing", "needy", "grateful", "sleepy"]
 };
+ 
+
 $("#needy-button").click(function () {
 
     count = count + 1;
 
-    let arrayPosition = count - 1;
 
     let currentMood = buttonCreature.moods[arrayPosition];
 
