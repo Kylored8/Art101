@@ -1,6 +1,6 @@
 
 body {
-    background: green
+    background:url('treeBackground.png') no-repeat;
 }
 .treeBackground {
     position:absolute;
@@ -39,9 +39,10 @@ p {
 margin-left:400px;
 margin-right:400px;
 z-index: 999;
-    color: #000000;
+   color: #ffffff;
 }
 .mushroom {
+    cursor: pointer;
     position:fixed;
 left: 73%;
     bottom: -45px;
@@ -49,17 +50,17 @@ left: 73%;
     height: auto;
   
 }
-.text {
+#cost {
     position: fixed;
-    margin-left:30%;
-    font-size: 40px;}
-
+right: 30%;
+    color: #ffffff;
+}
 
 #slug-button {
     position: fixed;
     left: 30%;
     width: 30%;
-    top: 300px;
+    top: 500px;
 
     width: 800px;
     padding: 0;

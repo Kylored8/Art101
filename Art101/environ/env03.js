@@ -19,5 +19,5 @@ arrayPosition = arrayPosition + 1
     console.log(count);
     console.log(arrayPosition);
     console.log(CurrentMood);
-    if (arrayPosition == 5) {arrayPosition = 0}
+    
 });
