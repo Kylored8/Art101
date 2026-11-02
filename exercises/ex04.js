@@ -2,6 +2,14 @@ let count = 0;
 let colorIndex = 0;
 let mood;
 let colors = ["Orchid", "Coral", "HotPink", "Plum"];
+$("#green").click(function() {
+   paintPage("green");
+});
+
+$("#orange").click(function() {
+   paintPage("orange");
+});
+
 $("#needy-button").click(function () {
    if (count < 5) { mood = "fresh and happy"; }
    else if ((count >= 5) && (count < 10)) { mood = "keep pushing"; }
