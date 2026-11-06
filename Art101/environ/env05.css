@@ -1,0 +1,109 @@
+body {
+    background: url('treeBackground.png') no-repeat;
+}
+
+.treeBackground {
+    position: absolute;
+    display: fixed;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+
+}
+
+#output {
+    font-size: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    z-index: 999;
+    color: #ffffff;
+}
+
+.left {
+    position: fixed;
+    right: 54%;
+    width: 100%;
+    top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.right {
+    position: fixed;
+    left: 49%;
+    width: 100%;
+    top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#intro {
+    font-size: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    z-index: 999;
+    color: #ffffff;
+}
+
+.mushroom {
+    cursor: pointer;
+    position: fixed;
+    left: 73%;
+    bottom: -45px;
+    width: 200px;
+    height: auto;
+
+}
+
+#cost {
+    display: flex;
+    margin-right: 20%;
+    padding: 0;
+    position: fixed;
+    left: 78%;
+    cursor: pointer;
+    pointer-events: none;
+    color: #ffffff;
+    bottom: 5%;
+}
+
+#slug-button {
+    position: fixed;
+    left: 30%;
+    width: 30%;
+    top: 500px;
+
+    width: 800px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    /* Shape the clickable area around the slug */
+    clip-path: polygon(40% 90%,
+            30% 75%,
+            30% 55%,
+            35% 35%,
+            55% 20%,
+            75% 10%,
+            90% 10%,
+            100% 5%,
+            95% 25%,
+            85% 40%,
+            70% 50%,
+            55% 60%,
+            45% 75%,
+            45% 100%,
+            15% 100%);
+}
+
+.slug_image {
+    display: block;
+    width: 100%;
+    height: auto;
+}

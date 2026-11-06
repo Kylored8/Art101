@@ -7,7 +7,7 @@ let MagicalSlug = {
 moods: ["gratious", "appriciated", "glowing", "needy", "grateful", "sleepy"]
 };
 let arrayPosition = -1;
-let MushroomMessage = "<p> Cost:" + MushroomCost + ". </p>";   
+let MushroomMessage = "<p> Cost:" + MushroomCost + "</p>";   
 $("#cost").html(MushroomMessage);
 $("#slug-button").click( function() {
    count = count + worth;
@@ -15,13 +15,14 @@ $("#slug-button").click( function() {
 arrayPosition = arrayPosition + 1
 
    let CurrentMood = MagicalSlug.moods[arrayPosition];
-  let message = "<p> you have " + count + " dollars and the slug is " + CurrentMood + ". </p>"
+  let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
  let MushroomMessage = "<p> Cost:" + MushroomCost + ". </p>";  
    $("#output").html(message);
     console.log(count);
     console.log(arrayPosition);
     console.log(CurrentMood);
     console.log(MushroomCost);
+    console.log(worth);
     if (arrayPosition == 5) {arrayPosition = 0}
     $("#cost").html(MushroomMessage);
 });
@@ -32,9 +33,9 @@ $(".mushroom-button").click( function() {
    MushroomCost = MushroomCost + 5;
    let MushroomMessage = "<p> Cost:" + MushroomCost + ". </p>";
     let CurrentMood = MagicalSlug.moods[arrayPosition];
-   let message = "<p> you have " + count + " dollars and the slug is " + CurrentMood + ". </p>"
+   let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
    $("#output").html(message);
-
+$("#cost").html(MushroomMessage);
    
 }
 })

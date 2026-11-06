@@ -2,7 +2,7 @@
 body {
     background: green
 }
-.treeBackground {}
+
 
 
 .left {
@@ -30,10 +30,8 @@ p {display:fixed;
 margin-left:400px;
 margin-right:400px;
 
-    color: #ffffff;
+    color: #000000;
 }
-#output {color: #ffffff;
-    }
 .mushroom {
     position:fixed;
 left: 73%;
@@ -42,6 +40,10 @@ left: 73%;
     height: auto;
   
 }
+.text {
+    position: fixed;
+    margin-left:30%;
+    font-size: 40px;}
 
 
 #slug-button {
