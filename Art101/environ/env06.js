@@ -1,0 +1,69 @@
+let MushroomCost = 15;
+let count = 0;
+let worth = 1;
+let MagicalSlug = {
+   worth: 1,
+   species: "Magical mollusk",
+   moods: ["gratious", "appriciated", "glowing", "needy", "grateful", "sleepy"]
+};
+let arrayPosition = -1;
+let MushroomMessage = "<p> Cost:" + MushroomCost + "</p>";
+$("#cost").html(MushroomMessage);
+$("#slug-button").click(function () {
+   count = count + worth;
+
+   arrayPosition = arrayPosition + 1
+
+   let CurrentMood = MagicalSlug.moods[arrayPosition];
+   let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
+   let MushroomMessage = "<p> Cost:" + MushroomCost + "</p>";
+   $("#output").html(message);
+   console.log(count);
+   console.log(arrayPosition);
+   console.log(CurrentMood);
+   console.log(MushroomCost);
+   console.log(worth);
+   if (arrayPosition == 5) { arrayPosition = 0 }
+   $("#cost").html(MushroomMessage);
+});
+$(".mushroom-button").click(function () {
+   $("#cost").html(MushroomMessage);
+   if (count >= MushroomCost) {
+      worth = worth + 1;
+      count = count - MushroomCost;
+      MushroomCost = MushroomCost + 5;
+      let MushroomMessage = "<p> Cost:" + MushroomCost + "</p>";
+      let CurrentMood = MagicalSlug.moods[arrayPosition];
+      let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
+      $("#output").html(message);
+      $("#cost").html(MushroomMessage);
+
+   }
+})
+let generator = 0;
+$("#generator-button").click(function () {
+   if (count >= 100) {
+      generator = generator + 1;
+      count = count - 100;
+      let CurrentMood = MagicalSlug.moods[arrayPosition];
+      let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
+
+      $("#output").html(message);
+      console.log(generator)
+   }
+   else { console.log(generator) }
+})
+function onepersecond() {
+   count = count + 1 * generator;
+   let CurrentMood = MagicalSlug.moods[arrayPosition];
+   let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
+ $("#output").html(message);
+}
+if (generator > 0) {
+setInterval(onepersecond, 1000);}
+$("#generator-button").hover(function () {
+   $("#helper-info").stop(true, true).slideDown(300);
+},
+    function () {
+        $("#helper-info").stop(true, true).slideUp(300); }
+)
