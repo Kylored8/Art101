@@ -36,6 +36,14 @@ $(".mushroom-button").click( function() {
    let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
    $("#output").html(message);
 $("#cost").html(MushroomMessage);
-   
+
 }
 })
+let generator = 1;
+$("#generator-button").click( function() {
+   if (count >= 100) {generator = generator + 1;
+   count = count - 100;
+   
+}})
+function onepersecond() {count = count + 1*generator;   
+}
