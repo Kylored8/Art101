@@ -4,7 +4,7 @@ let worth = 1;
 let MagicalSlug = {
    worth: 1,
    species: "Magical mollusk",
-   moods: ["gratious", "appriciated", "glowing", "needy", "grateful", "sleepy"]
+   moods: ["gracious", "appreciated", "glowing", "needy", "grateful", "sleepy"]
 };
 let arrayPosition = -1;
 let MushroomMessage = "<p> Cost:" + MushroomCost + "</p>";
@@ -36,15 +36,21 @@ $(".mushroom-button").click(function () {
       let CurrentMood = MagicalSlug.moods[arrayPosition];
       let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
       $("#output").html(message);
-      $("#cost").html(MushroomMessage);
-
+      $("#cost").html(MushroomMessage);}
+else {$("#cost").html(MushroomMessage);
    }
 })
 let generator = 0;
+let generatorTimer = null;
 $("#generator-button").click(function () {
    if (count >= 100) {
       generator = generator + 1;
       count = count - 100;
+      
+   if (generatorTimer === null) {
+      generatorTimer = setInterval(onepersecond, 1000);
+   }
+
       let CurrentMood = MagicalSlug.moods[arrayPosition];
       let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
 
@@ -59,8 +65,8 @@ function onepersecond() {
    let message = "<p class='cost'> you have " + count + " dollars and the slug is " + CurrentMood + "</p>"
  $("#output").html(message);
 }
-if (generator > 0) {
-setInterval(onepersecond, 1000);}
+
+
 $("#generator-button").hover(function () {
    $("#helper-info").stop(true, true).slideDown(300);
 },
